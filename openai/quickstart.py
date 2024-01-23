@@ -1,3 +1,6 @@
+"""
+https://platform.openai.com/docs/quickstart?context=python
+"""
 import os
 from openai import OpenAI
 client = OpenAI()
