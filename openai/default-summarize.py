@@ -1,5 +1,8 @@
 """
 https://platform.openai.com/examples/default-summarize
+ex:
+ChatCompletionMessage(content='Jupiter is a big planet that is fifth from the Sun. It is the largest planet in our Solar System. It is made mostly of gas
+and is much smaller than the Sun. But it is still much bigger than all the other planets combined. Jupiter is very bright and can be seen easily in the night sky.', role='assistant', function_call=None, tool_calls=None)
 """
 from openai import OpenAI
 client = OpenAI()
@@ -20,3 +23,4 @@ response = client.chat.completions.create(
   max_tokens=64,
   top_p=1
 )
+print(response.choices[0].message)
