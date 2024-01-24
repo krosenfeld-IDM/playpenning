@@ -1,0 +1,14 @@
+name: playpenning
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - jupyter
+  - pip
+  - pip:
+      - matplotlib
+      - tqdm
+      - llama-index
